@@ -131,6 +131,10 @@ CATEGORY_TEMPLATES = (
         "image": IMAGES_PATH + "/category_square.png",
         "name": _(u"Category with subcategories"),
     }),
+    (2, {"file": u"model://",
+        "image": IMAGES_PATH + "/product_default.png",
+        "name": _(u"Use long description as Template source"),
+    }),
 )
 CATEGORY_TEMPLATES = getattr(settings, 'CATEGORY_TEMPLATES', CATEGORY_TEMPLATES)
 

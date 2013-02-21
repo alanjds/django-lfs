@@ -412,7 +412,13 @@ class Category(models.Model):
         """
         if self.template != None:
             id = int(self.template)
-            return CATEGORY_TEMPLATES[id][1]["file"]
+            path = CATEGORY_TEMPLATES[id][1]["file"]
+            if path == 'model://':
+                import json
+                data = [self.pk, 'description', self.content_type]
+                path += 'json:'
+                path += json.dumps(data).encode('base64')
+            return path
 
         return None
 
