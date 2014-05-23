@@ -19,7 +19,7 @@
 	 *
 	 */
 	$.fn.lightBox = function(settings) {
-		var LOCAL_STATIC_PATH = STATIC_PATH || '';
+		var LOCAL_STATIC_PATH = STATIC_PATH || '/static/';
 
 		// Settings to configure the jQuery lightBox plugin how you like
 		settings = jQuery.extend({
@@ -29,11 +29,11 @@
 			// Configuration related to navigation
 			fixedNavigation:		false,		// (boolean) Boolean that informs if the navigation (next and prev button) will be fixed or not in the interface.
 			// Configuration related to images
-			imageLoading:			LOCAL_STATIC_PATH + '/static/jquery/lightbox/img/lightbox-ico-loading.gif',             // (string) Path and the
-			imageBtnPrev:			LOCAL_STATIC_PATH + '/static/jquery/lightbox/img/lightbox-btn-prev.gif',                        // (string) Path
-			imageBtnNext:			LOCAL_STATIC_PATH + '/static/jquery/lightbox/img/lightbox-btn-next.gif',                        // (string) Path
-			imageBtnClose:			LOCAL_STATIC_PATH + '/static/jquery/lightbox/img/lightbox-btn-close.gif',               // (string) Path and the
-			imageBlank:				LOCAL_STATIC_PATH + '/static/jquery/lightbox/img/lightbox-blank.gif',                   // (string) Path
+			imageLoading:			LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-ico-loading.gif',             // (string) Path and the
+			imageBtnPrev:			LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-btn-prev.gif',                        // (string) Path
+			imageBtnNext:			LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-btn-next.gif',                        // (string) Path
+			imageBtnClose:			LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-btn-close.gif',               // (string) Path and the
+			imageBlank:				oLOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-blank.gif',                   // (string) Path
 			// Configuration related to container image box
 			containerBorderSize:	10,			// (integer) If you adjust the padding in the CSS for the container, #lightbox-container-image-box, you will need to update this value
 			containerResizeSpeed:	400,		// (integer) Specify the resize duration of container image. These number are miliseconds. 400 is default.
