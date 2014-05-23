@@ -33,7 +33,7 @@
 			imageBtnPrev:			LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-btn-prev.gif',                        // (string) Path
 			imageBtnNext:			LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-btn-next.gif',                        // (string) Path
 			imageBtnClose:			LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-btn-close.gif',               // (string) Path and the
-			imageBlank:				oLOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-blank.gif',                   // (string) Path
+			imageBlank:				LOCAL_STATIC_PATH + 'jquery/lightbox/img/lightbox-blank.gif',                   // (string) Path
 			// Configuration related to container image box
 			containerBorderSize:	10,			// (integer) If you adjust the padding in the CSS for the container, #lightbox-container-image-box, you will need to update this value
 			containerResizeSpeed:	400,		// (integer) Specify the resize duration of container image. These number are miliseconds. 400 is default.
